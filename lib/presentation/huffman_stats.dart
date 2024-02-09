@@ -70,7 +70,7 @@ class HuffmanStats extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: OutlinedButton(
             onPressed: () => {pushGraph()},
-            child: const Text('Show diagram'),
+            child: const Text('Show Huffman tree'),
           ),
         ),
       ],
