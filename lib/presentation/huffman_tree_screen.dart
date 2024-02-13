@@ -31,6 +31,9 @@ class _HuffmanTreeScreenState extends State<HuffmanTreeScreen> {
     final double offsetW = size.width / huffmanWidth;
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Huffman Tree'),
+      ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.arrow_back),
         onPressed: () => Navigator.pop(context),

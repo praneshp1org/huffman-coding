@@ -8,6 +8,8 @@ class Huffman {
   String _encoded = '';
   double _entropy = 0.0;
   double _avgLength = 0.0;
+  double _efficiency = 0.0;
+  // double _compressionRatio = 0.0;
   int height = 1;
 
   //getters
@@ -16,6 +18,8 @@ class Huffman {
   String get encoded => _encoded;
   double get entropy => _entropy;
   double get avgLength => _avgLength;
+  double get efficiency => _efficiency;
+  // double get compressionRatio => _compressionRatio;
 
   Huffman(String phrase) {
     Map<String, int> freq = _count(phrase);
@@ -61,6 +65,7 @@ class Huffman {
       _entropy += p * log(1.0 / p) / ln2;
       _avgLength += p * dictLength;
     });
+    _efficiency = _entropy / _avgLength;
   }
 
   ///helper function for counting character frequencies in phrase

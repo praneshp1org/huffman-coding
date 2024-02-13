@@ -48,7 +48,8 @@ class HuffmanStats extends StatelessWidget {
                       'Entropy: ',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    Flexible(child: Text('${huffman.entropy}')),
+                    Flexible(
+                        child: Text('${huffman.entropy.toStringAsFixed(4)}')),
                   ],
                 ),
                 Row(
@@ -58,7 +59,20 @@ class HuffmanStats extends StatelessWidget {
                       'Average length of code: ',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    Flexible(child: Text('${huffman.avgLength}')),
+                    Flexible(
+                        child: Text('${huffman.avgLength.toStringAsFixed(4)}')),
+                  ],
+                ),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Text(
+                      'Efficiency: ',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Flexible(
+                        child:
+                            Text('${huffman.efficiency.toStringAsFixed(4)}')),
                   ],
                 ),
               ],
