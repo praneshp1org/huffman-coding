@@ -19,12 +19,12 @@ git clone https://github.com/praneshp1org/huffman-coding.git
 ```
 cd huffman
 ```
-#### 2. Install Dependencies
+#### 2. Install Packages
 ```commandline
 flutter pub get
 ```
 
-#### 3. Running
+#### 3. Running on android/iOS
 ```commandline
 flutter run
 ```
